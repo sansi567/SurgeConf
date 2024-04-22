@@ -1,0 +1,19 @@
+#!name=Skip Proxy Lists
+#!desc=The domain name and IP address of the proxy are not required.
+#!category=Custom
+
+[General]
+skip-proxy = %APPEND% *.kubesphere.io, *.jusda.int, *.taobao.com, *.baidu.com, *.aliyun.com, *.qq.com, *.jusdaglobal.com, *.jus-link.int, *.vvnm.cn, *.foxconn.com
+# always-real-ip = %APPEND% k8s.jusda.int, k8s.vvnm.cn
+# geoip-maxmind-url = https://cdn.jsdelivr.net/gh/NobyDa/geoip@release/Private-GeoIP-CN.mmdb
+
+[Host]
+# 该段定义本地 DNS 记录
+# 该功能等同于 /etc/hosts，加上了泛解析和别名支持。
+# DNS 全部交给系统处理
+# * = server:syslib
+# 特定 DNS 服务器
+# *.jusda.int = server:syslib
+# *.jus-link.int = server:syslib
+# *.vvnm.cn = server:223.5.5.5
+# *.vvnm.cn = server:223.6.6.6
